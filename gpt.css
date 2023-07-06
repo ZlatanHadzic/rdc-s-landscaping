@@ -52,6 +52,9 @@
 .navbar ul li:hover::after{
 	width: 100%;
 }
+.menu-toogle{
+	display: none;
+}
 @media (max-width: 768px){
 	.navbar{
 		flex-direction: column;
@@ -61,6 +64,25 @@
 		margin:0;
 		margin-right: 15px;
 		margin-bottom: 10px;
+	}
+
+.menu{
+		display: none;
+	}
+	.menu-toogle{
+		display: block;
+		background: none;
+		font-size: 1.5rem;
+		cursor: pointer;
+	}
+	.menu-toogle:focus{
+		outline: none;
+	}
+	.menu-dropdown{
+		display: none;
+	}
+	.menu-dropdown.show{
+		display: block;
 	}
 }
 .content{
